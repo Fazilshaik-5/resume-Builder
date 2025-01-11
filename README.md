@@ -1,3 +1,6 @@
+
+                                  SIMPLE RESUME BUILDER
+
 Simple Resume Builder - Beginner's Project
 A simple Resume Builder project for beginners who are just starting to learn web development. This project helps you understand the basics of HTML, CSS, and JavaScript by building a simple web application that allows users to create a resume.
 
@@ -10,7 +13,8 @@ Contributing
 License
 Project Overview
 This project is a Resume Builder where you can input your personal details, such as name, contact info, education, and work experience, and it will generate a simple resume. It’s a great way for beginners to practice coding skills and learn how to build interactive websites using basic web technologies like HTML, CSS, and JavaScript.
-
+DEMO
+"https://fazilshaik-5.github.io/resume-Builder/"
 Features
 Basic Form: A form where you can enter your personal information like name, contact info, work experience, etc.
 Interactive UI: A simple interface that allows users to input their details and see the result immediately.
