@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Background Styling with Resume Template */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyeB2YYpXKvGi5kkPJur7X1AnB8vHri8cjwQ&s) no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(8px);
+            z-index: -1;
+        }
+
+        /* Center content */
+        .container {
+            text-align: center;
+            position: relative;
+            top: 30%;
+            transform: translateY(-50%);
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out 1s;
+        }
+
+        .button {
+            background: linear-gradient(90deg, rgba(0, 136, 255, 1) 0%, rgba(34, 193, 195, 1) 100%);
+            color: white;
+            padding: 25px 60px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 40px;
+            display: inline-block;
+            transition: transform 0.3s ease, background 0.3s ease;
+            animation: bounceIn 2s ease-out 2s;
+        }
+
+        /* Button Hover Effects */
+        .button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(0, 136, 255, 1) 100%);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: translateY(-50px); opacity: 0; }
+            60% { transform: translateY(15px); opacity: 1; }
+            100% { transform: translateY(0); }
+        }
+
+        /* Promotional Content Styling */
+        .promotion {
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .promotion h2 {
+            font-size: 2.2rem;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 15px;
+            color: #ffdd57;
+        }
+
+        .promotion p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #f4f4f9;
+        }
+
+        .promotion a {
+            text-decoration: none;
+            color: #00c2ff;
+            font-weight: bold;
+            font-size: 1.4rem;
+            transition: color 0.3s;
+        }
+
+        .promotion a:hover {
+            color: #ffdd57;
+        }
+
+        /* Parallax/Scroll Effect */
+        .content {
+            position: relative;
+            z-index: 1;
+            margin-top: 50px;
+        }
+
+        .scroll-content {
+            margin-top: 100px;
+            font-size: 1.1rem;
+            text-align: center;
+            color: #f4f4f9;
+            opacity: 0;
+            animation: scrollAnim 2s forwards;
+        }
+
+        @keyframes scrollAnim {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+    <h1>Welcome to Your Resume Builder</h1>
+    <p>Ready to create a professional resume that gets noticed? Start now!</p>
+    <a href="https://resume-builder-prkdet9cpww8vgqs7g3fbq.streamlit.app/" class="button" target="_blank">Start Building Your Resume</a>
+</div>
+
+<!-- Promotional Text about the Resume Builder -->
+<div class="promotion">
+    <h2>Why Choose Our Resume Builder?</h2>
+    <p>Our app provides everything you need to create a stunning resume quickly and easily. With customizable templates, easy-to-use features, and expert tips, you can build a professional resume in no time. Whether you're applying for your first job or aiming for a career change, our tool will guide you every step of the way!</p>
+    <p>Get noticed by recruiters and take the first step towards your dream job today.</p>
+    <a href="https://resume-builder-prkdet9cpww8vgqs7g3fbq.streamlit.app/" target="_blank">Start Building Your Resume Now</a>
+</div>
+
+<div class="scroll-content">
+    <p>Explore our powerful tools and templates to create the perfect resume. It's fast, easy, and effective!</p>
+</div>
+
+</body>
+</html>
